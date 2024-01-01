@@ -1,0 +1,150 @@
+    /* Reset CSS*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      :root {
+        --cor-fundo-logo: #d8e3e7;
+        --cor-fonte-logo: #3C3E7B;
+        --cor-cpp: black;   /* cpp = Coração Preto e Peludo */
+        --cor-detalhe: white;
+        --fonte-manuscrita: 'Solitreo', cursive;
+        --fonte-base: 'Arial', sans-serif; 
+      }
+  
+      body {
+        background-color: var(--cor-fundo-logo);
+        color: var(--cor-cpp);
+        display: flex;
+        flex-direction: column;
+        font-family: var(--fonte-manuscrita);
+        min-height: 100vh;
+      }
+  
+      header {
+        background-color: var(--cor-fonte-logo);
+        color: var(--cor-fundo-logo);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--fonte-base);
+        height: 10vh;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 0;
+      }
+
+      footer {
+        background-color: var(--cor-fonte-logo);
+        color: var(--cor-fundo-logo);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--fonte-base);
+      }
+  
+      /* CODIGO PARA OS FLEX-ITEMS DA HEADER */
+
+      header img {
+        height: 100%;
+      }
+
+      header nav button {
+        background-color: var(--cor-fundo-logo);
+        color: var(--cor-fonte-logo);
+        padding: 10px;
+        border-radius: 5px;
+      }
+  
+      header nav button:hover {
+        text-decoration: none;
+        background-color: var(--cor-detalhe);
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      header nav button a {
+        text-decoration: none;
+      }
+
+      header nav button a:hover {
+        text-decoration: none;
+      }
+
+      /* CODIGO PARA OS FLEX-ITEMS DA MAIN */
+
+      .main-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        width: 100vw;
+      }
+
+      .main-item:nth-child(odd) {
+        background-color: var(--cor-fundo-logo);
+      }
+
+      .main-item:nth-child(even) {
+        background-color: var(--cor-detalhe);
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 70%;
+        padding: 10px;
+        box-sizing: border-box;
+        flex-direction: column;
+      }
+
+      .logoG {
+        background-image: url(logoG.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .perfil {
+        height: 200%;
+        width: 100%;
+        background-image: url(perfil.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .card-text {
+        text-align: justify;
+        padding: 10px;
+        overflow: auto;
+      }
+
+      .card-H1 {
+        text-align: center;
+        padding: 10px;
+        max-width: 66%;
+        height: 100%;
+        font-size: 5vw;
+      }
+
+      #contatenos {
+        flex-direction: column;
+        border: 1px double var(--cor-fonte-logo);
+      }
+
+      .form-items {
+        padding: 10px;
+      }

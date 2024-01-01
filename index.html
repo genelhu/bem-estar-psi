@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ESPAÇO CLÍNICO BEM ESTAR - SUA SAÚDE MENTAL EM BOAS MÃOS</title>
+  <!-- Icone favcon -->
+  <link rel="icon" href="logoP.png" type="image/x-icon">
+  <link rel="shortcut icon" href="logoP.png" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ESPAÇO CLÍNICO BEM ESTAR - SUA SAÚDE MENTAL EM BOAS MÃOS">
+  <meta property="og:description" content="LANDING PAGE DO ESPAÇO CLÍNICO BEM ESTAR">
+  <meta property="og:image" content="logoP.png">
+  <meta property="og:url" content="www.espacoclinicobemestar.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Uso de google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="logoP.png" alt="Logo">
+    <nav id="menu-principal">
+      <button class="botão navegação">
+        <a href="#sobre">Sobre</a>
+      </button>
+      <button class="botão navegação">
+        <a href="#formulario">Formulário</a>
+      </button>
+      <button class="botão navegação">
+        <a href="#">Início</a>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-item">
+      <div class="card logoG"></div>
+      <!-- <img id="logo-grande" class="card" src="logoG.png" alt="Imagem"> -->
+    </section>
+
+    <section class="main-item">
+      <article class="card">
+        <div class="perfil"></div>
+        <!-- <img id="perfil" src="perfil.png" alt="foto"> -->
+        <p class="card-text">Flávio Genelhú Oliveira, psicólogo registrado no CRP sob número 05-60699, formado em dezembro de 2019 pela Universidade de Vassouras no estado do Rio de Janeiro, atua profissionalmente na área clínica desde então. Ao longo de sua formação atuou no SEP (Serviço Escola de Psicologia) da Universidade de Vassouras e também no IFRJ de Paulo de Frontin - RJ em atendimento clínico por 2 anos, assim como participou de acolhimento de alunos e foi palestrante em um evento sobre escolhas profissionais no mesmo IFRJ.</p>
+      </article>
+    </section>
+
+    <section class="main-item">
+      <article class="card">
+        <h1 class="card-H1">Sua Saúde Mental IMPORTA!</h1>
+      </article>
+    </section>
+
+    <section class="main-item">
+      <form id="contatenos" class="card">
+        <p>INFORMAÇÔES PARA CONTATO</p>
+
+        <div class="form-items">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+  
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+  
+          <button onclick="enviar()">Enviar</button>
+        </div>
+
+        <p id="pisca">PREENCHA SEUS DADOS QUE ENTRAREMOS EM CONTATO </p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Flávio Genelhú Oliveira - CRP: 05-60699</p><p>Cel/Whatsapp: (24) 99261-1656</p></footer>
+
+</body>
+</html>
