@@ -63,7 +63,36 @@
 
       header img {
         height: 100%;
+        margin-left: 15px;
       }
+
+      /* CODIGO PARA ANIMAÇÃO DA LOGO NA HEADER */
+
+      @keyframes dance {
+        0%, 100% {
+          transform: translateX(0) rotate(0deg);
+        }
+
+        25% {
+          transform: translateX(15px) rotate(30deg);
+        }
+
+        75% {
+          transform: translateX(-30px) rotate(-30deg);
+        }
+      }
+
+      #logo {
+        animation-duration: 4s; /* Duração total da animação */
+        animation-iteration-count: infinite; /* Repetir indefinidamente */
+        animation-timing-function: ease-in-out; /* Ritmo da animação */
+      }
+
+      .logo.dance {
+        animation-name: dance;
+        animation-delay: 6s; /* Ajuste conforme necessário */
+      }
+
 
       header nav button {
         background-color: var(--cor-fundo-logo);
@@ -116,7 +145,8 @@
         align-items: center;
       }
 
-      /* Código do main-item que mostra o logo do Espaço Bem-Estar */
+      /* CÓDIGO REFERENTE AO MAIN-ITEM QUE MOSTRA O LOGO DO ESPAÇO BEM-ESTAR */
+
       .logoG {
         background-image: url(logoG.png);
         background-size: contain;
@@ -124,7 +154,7 @@
         background-position: center;
       }
 
-      /* Código referente ao main-item SOBRE */
+      /* CÓDIGO REFERENTE AO MAIN-ITEM "SOBRE" */
       .perfil {
         height: 100%;
         width: 100%;
@@ -140,7 +170,8 @@
         overflow: auto;
       }
 
-      /* Código referente às FOTOS */
+      /* CÓDIGO REFERENTE ÀS FOTOS */
+
       .foto1 {
         height: 100%;
         width: 100%;
@@ -197,19 +228,22 @@
         text-align: center;
       }
 
-      /* Código referente ao main-item SAUDE MENTAL */
+      /* CÓDIGO REFERENTE AO MAIN-ITEM SAUDE MENTAL */
+
       .saudemental {
         background-image: url(msgsaudemental.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         padding: 0px;
+        /* Quando precisei fazer uma borda nesta figura */
         /* border-width: 10px;
         border-style: solid;
         border-color: var(--cor-detalhe); */
       }
 
-      /* Código referente ao FORMULÁRIO */
+      /* CÓDIGO REFERENTE AO FORMULÁRIO */
+
       #contatenos {
         border: 3px double var(--cor-fonte-logo);
         flex-direction: column;
@@ -235,7 +269,7 @@
         width: 200px;
       }
 
-      /* Código referente à responsividade em telas maiores */
+      /* CÓDIGO REFERENTE À RESPONSIVIDADE EM TELAS MAIORES */
       @media (min-width: 1000px) {
         .card {
           flex-direction: row;
