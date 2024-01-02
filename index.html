@@ -13,7 +13,7 @@
   <meta property="og:title" content="ESPAÇO CLÍNICO BEM ESTAR - SUA SAÚDE MENTAL EM BOAS MÃOS">
   <meta property="og:description" content="LANDING PAGE DO ESPAÇO CLÍNICO BEM ESTAR">
   <meta property="og:image" content="logoP.png">
-  <meta property="og:url" content="www.espacoclinicobemestar.com.br">
+  <meta property="og:url" content="genelhu.github.io">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
 
@@ -34,7 +34,7 @@
         <a href="#sobre">Sobre</a>
       </button>
       <button class="botão navegação">
-        <a href="#formulario">Formulário</a>
+        <a href="#contatenos">Formulário</a>
       </button>
       <button class="botão navegação">
         <a href="#">Início</a>
@@ -45,21 +45,17 @@
   <main>
     <section class="main-item">
       <div class="card logoG"></div>
-      <!-- <img id="logo-grande" class="card" src="logoG.png" alt="Imagem"> -->
     </section>
 
-    <section class="main-item">
+    <section class="main-item" id="sobre">
       <article class="card">
         <div class="perfil"></div>
-        <!-- <img id="perfil" src="perfil.png" alt="foto"> -->
         <p class="card-text">Flávio Genelhú Oliveira, psicólogo registrado no CRP sob número 05-60699, formado em dezembro de 2019 pela Universidade de Vassouras no estado do Rio de Janeiro, atua profissionalmente na área clínica desde então. Ao longo de sua formação atuou no SEP (Serviço Escola de Psicologia) da Universidade de Vassouras e também no IFRJ de Paulo de Frontin - RJ em atendimento clínico por 2 anos, assim como participou de acolhimento de alunos e foi palestrante em um evento sobre escolhas profissionais no mesmo IFRJ.</p>
       </article>
     </section>
 
     <section class="main-item">
-      <article class="card">
-        <h1 class="card-H1">Sua Saúde Mental IMPORTA!</h1>
-      </article>
+      <div class="card saudemental"></div>
     </section>
 
     <section class="main-item">
@@ -68,13 +64,19 @@
 
         <div class="form-items">
           <label for="nome">Nome:</label>
+          <br>
           <input type="text" id="nome" name="nome" required>
+          <br>
   
           <label for="email">E-mail:</label>
+          <br>
           <input type="email" id="email" name="email" required>
+          <br>
   
           <label for="telefone">Telefone:</label>
+          <br>
           <input type="tel" id="telefone" name="telefone" required>
+          <br>
   
           <button onclick="enviar()">Enviar</button>
         </div>

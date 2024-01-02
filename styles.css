@@ -117,6 +117,13 @@
         background-position: center;
       }
 
+      .saudemental {
+        background-image: url(msgsaudemental.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
       .perfil {
         height: 200%;
         width: 100%;
@@ -142,7 +149,8 @@
 
       #contatenos {
         flex-direction: column;
-        border: 1px double var(--cor-fonte-logo);
+        border: 3px double var(--cor-fonte-logo);
+        width: 33%;        
       }
 
       .form-items {
