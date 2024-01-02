@@ -125,7 +125,7 @@
       }
 
       .perfil {
-        height: 200%;
+        height: 100%;
         width: 100%;
         background-image: url(perfil.png);
         background-size: contain;
@@ -139,20 +139,28 @@
         overflow: auto;
       }
 
-      .card-H1 {
-        text-align: center;
-        padding: 10px;
-        max-width: 66%;
-        height: 100%;
-        font-size: 5vw;
-      }
-
       #contatenos {
-        flex-direction: column;
         border: 3px double var(--cor-fonte-logo);
-        width: 33%;        
+        flex-direction: column;
+        align-items: center;
       }
 
       .form-items {
+        
         padding: 10px;
+        
       }
+
+      @media (min-width: 1000px) {
+        .card {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .perfil {
+          width: 200%;
+        }
+  
+
+      }
+
