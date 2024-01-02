@@ -157,10 +157,11 @@
 
       h1 {
         text-align: center;
+        font-size: 1.1em;
       }
 
       input {
-        width: 230px;
+        width: 240px;
       }
 
       @media (min-width: 1000px) {
@@ -171,6 +172,10 @@
 
         .perfil {
           width: 200%;
+        }
+
+        h1 {
+          font-size: 1.6em;
         }
   
       }
