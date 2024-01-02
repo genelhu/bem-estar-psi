@@ -85,12 +85,12 @@
       #logo {
         animation-duration: 4s; /* Duração total da animação */
         animation-iteration-count: infinite; /* Repetir indefinidamente */
-        animation-timing-function: ease-in-out; /* Ritmo da animação */
+        animation-timing-function: ease; /* Ritmo da animação */
       }
 
       .logo.dance {
         animation-name: dance;
-        animation-delay: 6s; /* Ajuste conforme necessário */
+        animation-delay: 0s; /* Ajuste conforme necessário */
       }
 
 
