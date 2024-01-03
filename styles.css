@@ -269,6 +269,22 @@
         width: 200px;
       }
 
+      form button {
+        background-color: var(--cor-fundo-logo);
+        color: var(--cor-fonte-logo);
+        padding: 10px;
+        border-radius: 5px;
+      }
+  
+      form button:hover {
+        text-decoration: none;
+        background-color: var(--cor-fonte-logo);
+        color: var(--cor-fundo-logo);
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+
       /* CÓDIGO REFERENTE À RESPONSIVIDADE EM TELAS MAIORES */
       @media (min-width: 1000px) {
         .card {
