@@ -295,8 +295,9 @@
 
       footer div img {
         height: 100%;
-        margin: 5px;
+        margin: 10px;
         filter: drop-shadow(5px 5px 5px var(--cor-fundo-logo));
+        display: none;
       }
 
 
@@ -317,6 +318,10 @@
 
         input {
           width: 250px;
+        }
+
+        footer div img {
+          display: unset;
         }
   
       }
